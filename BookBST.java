@@ -36,7 +36,7 @@ public class BookBST {
 
     return searchBook(root.right, isbn);
 }
-
+    // public skeleton method to search for a book in the BST (for Record finder)
 public Book search(long isbn) {
     return searchBook(this.root, isbn);
 }
