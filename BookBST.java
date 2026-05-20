@@ -25,12 +25,20 @@ public class BookBST {
         this.root = insertBook(this.root, isbn, title, author);
     }
      // private skeleton method to search for a book in the BST (for Record finder)
-    private Book searchBook(long isbn){
-        return null;
+ private Book searchBook(Book root, long isbn) {
+    if (root == null || root.getIsbn() == isbn) {
+        return root;
     }
-     // public skeleton method to search for a book in the BST (for Record finder)
-    public Book search(long isbn) {
-        return null;
+
+    if (isbn < root.getIsbn()) {
+        return searchBook(root.left, isbn);
     }
+
+    return searchBook(root.right, isbn);
+}
+
+public Book search(long isbn) {
+    return searchBook(this.root, isbn);
+}
     }
 
