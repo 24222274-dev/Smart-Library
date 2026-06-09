@@ -1,5 +1,3 @@
-package smartlibrary;
-
 /**
  * TASK 4: ADT DESIGNER — Interface (Information Hiding) [cite: 10]
  * This interface establishes the architectural contract for the Smart Library System. [cite: 5, 10]
