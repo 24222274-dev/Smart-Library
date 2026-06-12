@@ -2,31 +2,12 @@
  * Task 2: Borrowing History  —  LIFO stack of borrowed books.
  * Linked-list based (not java.util.Stack) so the DS is built from scratch.
  * push / pop / peek = O(1),  show = O(n).
- *
- * ------------------------------------------------------------------
- * INTEGRATION NOTES (for the rest of the group)
- * ------------------------------------------------------------------
- * Depends on : Member 1's Book class (private long isbn, private String
- *              title, private String author) — accessed only via the public
- *              getters getIsbn(), getTitle(), getAuthor().
- *
  * Public API : push(Book)  -> add a newly borrowed book on top
  *              pop()       -> remove + return most recent (for "return book")
  *              peek()      -> view most recent without removing
  *              isEmpty()   -> true if no borrows yet
  *              size()      -> number of books in history
  *              show()      -> print full history, newest first (LIFO)
- *
- * Usage in SmartLibrary.borrowBook(long isbn):
- *     Book b = catalogue.search(isbn);
- *     if (b != null) history.push(b);          // <-- only line you need
- *
- * Usage in viewLatestHistory():
- *     history.show();
- *
- * Do NOT touch the private Node class or the `top` field — that's the
- * information-hiding boundary. Go through the methods only.
- * ------------------------------------------------------------------
  */
 public class BorrowStack {
 
