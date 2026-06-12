@@ -59,17 +59,4 @@ public class BorrowStack {
             System.out.println(i + ". [ISBN: " + c.book.getIsbn() + "] "
                                  + c.book.getTitle() + " — " + c.book.getAuthor());
     }
-
-    // STANDALONE DEMO — REMOVE LINES 63-75 WHEN MERGING WITH YOUR CODE!!!
-    public static void main(String[] args) {
-        BorrowStack h = new BorrowStack();
-        h.show();
-        h.push(new Book(9780262033848L, "Intro to Algorithms",      "Cormen"));
-        h.push(new Book(9780132350884L, "Clean Code",               "Martin"));
-        h.push(new Book(9780201616224L, "The Pragmatic Programmer", "Hunt"));
-        h.show();
-        System.out.println("peek: " + h.peek().getTitle() + " | size: " + h.size());
-        System.out.println("popped: " + h.pop().getTitle());
-        h.show();
-    }
 }
